@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "gen": "node scripts/generate.js",
+    "seed": "node db/seed.js",
+    "drop": "node db/drop.js",
+    "reset": "npm run drop && npm run seed"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "files": "^2.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mercedlogger": "^1.0.1",
+    "mongoose": "^5.12.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "My API",
+      "description": "",
+      "version": "1.0"
+    },
+    "produces": ["application/json"],
+    "host": "localhost:4000",
+    "basePath": "/",
+    "paths": {
+      "/": {
+        "get": {
+          "x-swagger-router-controller": "home",
+          "operationId": "main",
+          "tags": ["/"],
+          "description": "The Main Route",
+          "parameters": [],
+          "responses": {}
+        }
+      }
+    }
+ }

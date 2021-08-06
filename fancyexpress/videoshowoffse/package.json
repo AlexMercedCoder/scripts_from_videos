@@ -1,0 +1,26 @@
+{
+  "name": "expressswaggertemplate",
+  "version": "1.0.0",
+  "description": "Template using express and swagger",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules server.js",
+    "dev": "nodemon --experimental-json-modules server.js"
+  },
+  "keywords": [],
+  "author": "Alex Merced",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mercedlogger": "^1.0.1",
+    "morgan": "^1.10.0",
+    "swagger-express-router": "^1.0.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
