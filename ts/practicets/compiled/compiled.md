@@ -1,0 +1,1 @@
+This is where compiled files will appear when compiled, to change this change the outDir property in the tsconfig.json.
