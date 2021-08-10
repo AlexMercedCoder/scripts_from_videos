@@ -1,0 +1,39 @@
+# netlify.toml documentation => https://docs.netlify.com/configure-builds/file-based-configuration/#post-processing
+
+#///////////////////////////////
+# Application Build Settings
+#///////////////////////////////
+[build]
+    #base = the root folder for build context (where the package.json file is)
+    #base = ""
+
+    #publish = after build command is complete the folder to serve as the website
+    publish = "public"
+
+    # command = the build command to run from the base directory
+    # command = "npm run build"
+
+    #functions = folder where your netlify functions are located
+    functions = "functions"
+
+
+#///////////////////////////////
+# URL Redirects
+#///////////////////////////////
+# Below is a very standard rule for Single Page Apps using routing
+#[[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+
+#///////////////////////////////
+# Headers
+#///////////////////////////////
+#Below a configuration to let other websites make requests to yours
+#[[headers]]
+#   for = "/*"
+#   [headers.values]
+#       Access-Control-Allow-Origin = "*"
+#       Access-Control-Allow-Methods = "*"
+#       Access-Control-Allow-Headers = "*"
