@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Pho Sho",
+        "address" : {
+            "street" : "805 V Street NW",
+            "zipcode" : 20001
+        },
+        "cuisine": "Vietnamese"
+      },
+      {
+        "name": "BimBimHop",
+        "address" : {
+            "street" : "805 V Street NW",
+            "zipcode" : 20001
+        },
+        "cuisine": "Korean/Live Hip Hop"
+      },
+      {
+        "name": "Butter Me Up",
+        "address" : {
+            "street" : "805 V Street NW",
+            "zipcode" : 20001
+        },
+        "cuisine": "Soul Food"
+      },
+      {
+        "name": "Quesazilla",
+        "address" : {
+            "street" : "805 V Street NW",
+            "zipcode" : 20001
+        },
+        "cuisine": "Dinosaur Themed Mexican Restaurant"
+      }
+]

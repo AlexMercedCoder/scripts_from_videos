@@ -1,0 +1,19 @@
+{
+  "name": "Apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.17.0",
+    "cross-env": "^7.0.2",
+    "graphql": "^15.3.0",
+    "mercedlogger": "^1.0.1"
+  }
+}
