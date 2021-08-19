@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+</head>
+<body>
+    <h1>THe below is a block with state</h1>
+    <div x-data="{open: false, color: '<%= color %>', color2: '<%= color2 %>'}">
+        
+        <img x-show="open" 
+        src="https://pbs.twimg.com/profile_images/1378037175220981760/NqJolFmD_400x400.jpg">
+
+        <button @click="open = !open">Show Image</button>
+
+        <input type=text x-bind:value="open ? color : color2"/>
+
+    </div>
+    <main>
+        <h1>Saying, let's fill in the div below</h1>
+        <div id="target"></div>
+        <button 
+        hx-get="/bread" 
+        hx-trigger="click"
+        hx-target="div#target"
+        hx-swap="innerHTML"
+        >Fill It In</button>
+    </main>
+    
+</body>
+</html>

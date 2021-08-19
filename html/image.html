@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.hickoryfarms.com/dw/image/v2/AAOA_PRD/on/demandware.static/-/Sites-Web-Master-Catalog/default/dw9dc0e7f6/images/products/smoked-goudend-031080-1.jpg?sw=815&sh=815&sm=fit" alt="Gouda Cheese" class="circle"/>
+
+    <img src="https://www.hickoryfarms.com/dw/image/v2/AAOA_PRD/on/demandware.static/-/Sites-Web-Master-Catalog/default/dw9dc0e7f6/images/products/smoked-gouda-blend-031080-1.jpg?sw=815&sh=815&sm=fit" alt="Gouda Cheese" class="circle"/>
+
+    <div class=image>
+        CHEESE
+    </div>
+
+    <style>
+
+    
+        .circle {
+            display: block;
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 90px;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            filter:brightness(30%)
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+            background-image: url(https://cdn.shopify.com/s/files/1/0415/8485/3159/products/chrome_h96PwMmoUk_740x.png?v=1593530631);
+            background-size: cover;
+        }
+    </style>
+    <script>
+        function defaultImage(event){
+            event.target.setAttribute("src", "https://cdn.shopify.com/s/files/1/1312/3351/products/Unknown.jpg?v=1615838418")
+        }
+
+        const img = document.querySelector("img.circle")
+
+        img.addEventListener("error", defaultImage)
+
+
+    </script>
+    
+</body>
+</html>
