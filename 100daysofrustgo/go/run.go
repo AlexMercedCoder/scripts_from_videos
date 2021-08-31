@@ -2,17 +2,17 @@ package main
 
 import (
 	"fmt"
-	"github.com/francoispqt/lists/slices"
+	// "github.com/francoispqt/lists/slices"
 	// "strings"
 )
 
 func main (){
 
-	// var myStrArr [5]string = [5]string{"Hello", "World", "How", "Are", "You"}
-	var myStrSlice slices.StringSlice = []string{"Hello", "World", "How", "Are", "You"}
-	filteredSlice := myStrSlice.Map(func (index int, value string) string {
-		return value + "Cheese"
-	})
-	fmt.Println(filteredSlice)
+	b := []int{1,2,3,4,5,6}
+
+	for index, item := range b {
+		fmt.Println(index)
+		fmt.Println(item)
+	}
 
 }

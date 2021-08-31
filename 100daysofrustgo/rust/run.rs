@@ -1,5 +1,16 @@
 fn main (){
-    let my_vec: Vec<String> = vec![String::from("cheese"), String::from("blue")];
-    let filter_result: Vec<_> = my_vec.iter().filter(|x| x.to_owned().eq("blue")).collect();
-    println!("{:?}", filter_result);
+    
+    let arr = [1,2,3,4,5,6,7];
+
+    for x in arr.iter()  {
+        match x {
+            1 => println!("Eat Cheese"),
+            2 | 3 => println!("Eat Bread"),
+            4..=6 => println!("Eat Good"),
+            _ => println!("boooooo")
+        }
+    }
+
+
+
 }
