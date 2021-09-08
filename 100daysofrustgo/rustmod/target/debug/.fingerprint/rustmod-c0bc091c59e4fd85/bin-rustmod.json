@@ -1,0 +1,1 @@
+{"rustc":17807758859236181817,"features":"[]","target":17850647345876384603,"profile":18108590124580271077,"path":1036222786711178230,"deps":[[9204232421212394715,"serde_json",false,4315803211948805019]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/rustmod-c0bc091c59e4fd85/dep-bin-rustmod"}}],"rustflags":[],"metadata":7797948686568424061,"config":0,"compile_kind":0}
