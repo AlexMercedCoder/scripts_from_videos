@@ -1,13 +1,14 @@
 // use std::collections::HashMap;
 // use std::fmt::Error;
-use std::env;
+// use std::env;
 
 
 fn main (){
 
-    match env::var("boo") {
-        Ok(val) => println!("{}", val),
-        Err(e) => println!("{:?}", e)
-    }
+    let mut my_string:String = String::from("Hello, it's me, Mario");
+
+    my_string.shrink_to(2);
+
+    println!("{}", my_string);
 
 }
