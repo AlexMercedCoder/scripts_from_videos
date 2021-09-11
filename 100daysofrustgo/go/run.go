@@ -4,25 +4,36 @@ import (
 	"fmt"
 	// "errors"
 	// "github.com/francoispqt/lists/slices"
-	// "strings"
+	// s "strings"
 	// "os"
-	"encoding/json"
+	// "encoding/json"
+	"net/http"
 )
 
-type Person struct {
-	Name string `json:"name"`
-	Age int `json:"age"`
+var p = fmt.Println
+
+var f = fmt.Fprintf
+
+func responder(res http.ResponseWriter, req *http.Request){
+	f(res, "Hello World")
 }
 
+func headers(w http.ResponseWriter, req *http.Request) {	
+		p(req.Method)
+		for name, headers := range req.Header {
+			for _, h := range headers {
+				fmt.Fprintf(w, "%v: %v\n", name, h)
+			}
+		}
+	}
+
+
 func main (){
-
-	var result map[string]string
-
-	err := json.Unmarshal([]byte(`{"age":"36","name":"Alex Merced"}`), &result)
-
-	fmt.Println("error:", err)
-	fmt.Println("result:", result)
-
 	
+	http.HandleFunc("/", responder)
+	http.HandleFunc("/headers", headers)
+
+	http.ListenAndServe(":5000", nil)
+
 
 }
