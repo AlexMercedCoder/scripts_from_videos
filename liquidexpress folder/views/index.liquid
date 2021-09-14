@@ -1,0 +1,17 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<h1>{{greeting}}</h1>
+
+{% if show == true %}
+<h1>This is true</h1>
+{% else %}
+<h1>This is false</h1>
+{% endif %}
+
+{% for num in nums %}
+
+<h1>{{num}}</h1>
+
+{% endfor %}
+{% endblock %}
