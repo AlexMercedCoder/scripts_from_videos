@@ -1,0 +1,69 @@
+cargo:include=/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/brotli-sys-0.3.2/brotli/include
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_x86_64-unknown-linux-gnu = None
+CC_x86_64_unknown_linux_gnu = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-unknown-linux-gnu = None
+CFLAGS_x86_64_unknown_linux_gnu = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/common/dictionary.o" "-c" "brotli/common/dictionary.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/bit_reader.o" "-c" "brotli/dec/bit_reader.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/decode.o" "-c" "brotli/dec/decode.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/huffman.o" "-c" "brotli/dec/huffman.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/state.o" "-c" "brotli/dec/state.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/backward_references.o" "-c" "brotli/enc/backward_references.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/backward_references_hq.o" "-c" "brotli/enc/backward_references_hq.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/bit_cost.o" "-c" "brotli/enc/bit_cost.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/block_splitter.o" "-c" "brotli/enc/block_splitter.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/brotli_bit_stream.o" "-c" "brotli/enc/brotli_bit_stream.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/cluster.o" "-c" "brotli/enc/cluster.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/compress_fragment.o" "-c" "brotli/enc/compress_fragment.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/compress_fragment_two_pass.o" "-c" "brotli/enc/compress_fragment_two_pass.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/dictionary_hash.o" "-c" "brotli/enc/dictionary_hash.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/encode.o" "-c" "brotli/enc/encode.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/entropy_encode.o" "-c" "brotli/enc/entropy_encode.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/histogram.o" "-c" "brotli/enc/histogram.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/literal_cost.o" "-c" "brotli/enc/literal_cost.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/memory.o" "-c" "brotli/enc/memory.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/metablock.o" "-c" "brotli/enc/metablock.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/static_dict.o" "-c" "brotli/enc/static_dict.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "brotli/include" "-o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/utf8_util.o" "-c" "brotli/enc/utf8_util.c"
+exit status: 0
+AR_x86_64-unknown-linux-gnu = None
+AR_x86_64_unknown_linux_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/libbrotli.a" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/common/dictionary.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/bit_reader.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/decode.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/huffman.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/dec/state.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/backward_references.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/backward_references_hq.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/bit_cost.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/block_splitter.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/brotli_bit_stream.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/cluster.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/compress_fragment.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/compress_fragment_two_pass.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/dictionary_hash.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/encode.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/entropy_encode.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/histogram.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/literal_cost.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/memory.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/metablock.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/static_dict.o" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/brotli/enc/utf8_util.o"
+exit status: 0
+running: "ar" "s" "/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out/libbrotli.a"
+exit status: 0
+cargo:rustc-link-lib=static=brotli
+cargo:rustc-link-search=native=/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/brotli-sys-89e835d66d4fc838/out

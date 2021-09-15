@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/typenum-419f669dde8ede6c/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/build/typenum-419f669dde8ede6c/out/op.rs
