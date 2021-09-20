@@ -31,6 +31,11 @@ async fn meal(meal: web::Query<Meal>) -> Result<String> {
     Ok(format!("I'm going to eat {} and {}", meal.cheese, meal.bread))
 }
 
+#[post("/postmeal")]
+async fn postmeal(body: web::Json<Meal>) -> Result<String> {
+    Ok(format!("I'm going to eat {} and {}", body.cheese, body.bread))
+}
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
@@ -39,6 +44,7 @@ async fn main() -> std::io::Result<()> {
             .service(echo)
             .service(eat)
             .service(meal)
+            .service(postmeal)
             .route("/hey", web::get().to(manual_hello))
     })
     .bind("127.0.0.1:4000")?
