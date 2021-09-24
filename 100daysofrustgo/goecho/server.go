@@ -7,12 +7,13 @@ import (
 	// "encoding/json"
 )
 
-type Dog struct {
-	Name string `json: "name"`
-	Age int `json: "age"`
-}
 
 func main(){
+
+	//COnnect
+	db := Connect()
+
+	// ECHO CODE BELOW
 	e := echo.New()
 
 	e.GET("/", func(c echo.Context) error {
@@ -36,7 +37,14 @@ func main(){
 			Name:  body.Name,
 			Age: body.Age,
 		  }
-		  return c.JSON(http.StatusOK, u)
+
+		db.Create(u)
+
+		var dog Dog
+
+		db.First(&dog, u.ID)
+
+		  return c.JSON(http.StatusOK, dog)
 
 		// if err != nil {
 		// 	// response, err := json.Marshal(body)
