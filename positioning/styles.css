@@ -1,0 +1,106 @@
+* {
+    outline: 2px dotted green
+}
+
+/* ROW SETTINGS */
+
+.row {
+    display: flex
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.menu {
+    display: flex;
+    font-size: 1.5em;
+    padding-top: 1%;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+
+/* HERO IMAGE */
+
+.hero {
+    height: 50vh;
+    background-image: url(https://static6.depositphotos.com/1163454/669/v/600/depositphotos_6695694-stock-illustration-superhero-background.jpg);
+    background-size: cover;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+
+.hero p {
+    font-size: 4em;
+    font-weight: 900;
+    color: white;
+    padding-right: 10%;
+    position: relative;
+    top: 20%;
+    left: 50%
+}
+
+/* CALL TO ACTION */
+
+.cta {
+    justify-content: center;
+    padding: 4%;
+}
+
+.cta div {
+    text-align: center;
+}
+
+.cta div p {
+    font-size: 4em;
+    margin: 20px;
+}
+
+.cta div button, .buttons button {
+    padding: 15px;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.cards {
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    min-width: 150px;
+    height: 350px;
+    border: 2px solid brown;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+.card p {
+    text-align: justify;
+    padding: 8px;
+}
+
+.card .buttons {
+    text-align: center;
+}
+
+.card .buttons button {
+    margin: 10px;
+}
