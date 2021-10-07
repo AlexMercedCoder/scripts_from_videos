@@ -1,0 +1,11 @@
+/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/deps/dotenv-69b715699244bcc0.rmeta: /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/lib.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/parse.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/errors.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/iter.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/find.rs
+
+/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/deps/libdotenv-69b715699244bcc0.rlib: /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/lib.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/parse.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/errors.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/iter.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/find.rs
+
+/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/deps/dotenv-69b715699244bcc0.d: /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/lib.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/parse.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/errors.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/iter.rs /home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/find.rs
+
+/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/lib.rs:
+/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/parse.rs:
+/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/errors.rs:
+/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/iter.rs:
+/home/alexmerced/.cargo/registry/src/github.com-1ecc6299db9ec823/dotenv-0.15.0/src/find.rs:

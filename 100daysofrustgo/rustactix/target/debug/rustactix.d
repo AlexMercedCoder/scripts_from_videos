@@ -1,1 +1,1 @@
-/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/rustactix: /home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/src/main.rs
+/home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/target/debug/rustactix: /home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/src/main.rs /home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/src/models.rs /home/alexmerced/development/teaching/scratch/videos/100daysofrustgo/rustactix/src/schema.rs

@@ -1,5 +1,17 @@
+#[macro_use]
+extern crate diesel;
+extern crate dotenv;
+
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder, Result};
 use serde::Deserialize;
+
+use diesel::prelude::*;
+use diesel::pg::PgConnection;
+use dotenv::dotenv;
+use std::env;
+
+pub mod schema;
+pub mod models;
 
 #[derive(Deserialize)]
 struct Meal {
@@ -7,8 +19,32 @@ struct Meal {
     bread: String
 }
 
+pub fn establish_connection() -> PgConnection {
+    dotenv().ok();
+
+    let database_url = env::var("DATABASE_URL")
+        .expect("DATABASE_URL must be set");
+    PgConnection::establish(&database_url)
+        .expect(&format!("Error connecting to {}", database_url))
+}
+
 #[get("/")]
 async fn hello () -> impl Responder {
+    use schema::posts::dsl::*;
+    use models::Post;
+
+    let connection = establish_connection();
+    let results = posts.filter(published.eq(true))
+        .limit(5)
+        .load::<Post>(&connection)
+        .expect("Error loading posts");
+
+    println!("Displaying {} posts", results.len());
+    for post in results {
+        println!("{}", post.title);
+        println!("----------\n");
+        println!("{}", post.body);
+    }
     HttpResponse::Ok().body("Hello World")
 }
 
