@@ -1,0 +1,14 @@
+{% layout "layout.liquid" %}
+
+{% block content %}
+<div>
+<h1>This is from the index.liquid file</h1>
+<ul>
+
+{% for duck in ducks %}
+<li>{{duck}}</li>
+{% endfor %}
+
+</ul>
+</div>
+{% endblock %}
