@@ -1,0 +1,14 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div class="form auth">
+<h3>Signup</h3>
+<form action="/auth/signup" method="post">
+<input type="text" name="username" placeholder="write username here">
+<input type="password" name="password" placeholder="write password here">
+<input type="submit" value="Create User">
+</form>
+</div>
+
+
+{% endblock %}

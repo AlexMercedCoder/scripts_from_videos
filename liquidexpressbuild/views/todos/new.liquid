@@ -1,0 +1,13 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div class="form">
+<h3>Create a New Todo</h3>
+<form action="/todos" method="post">
+<input type="text" name="action" placeholder="what do you need to do?">
+<input type="submit" value="Create Todo">
+</form>
+</div>
+
+
+{% endblock %}

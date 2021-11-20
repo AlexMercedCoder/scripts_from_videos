@@ -1,0 +1,20 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+{% for todo in todos %}
+<div class="todo">
+
+<a href="/todos/{{todo._id}}"><h2>{{todo.action}} - 
+{% if todo.completed == true %}
+🌹
+{% else %}
+🥀
+{% endif %}
+</h2></a>
+
+</div>
+{% endfor %}
+
+
+{% endblock %}
+

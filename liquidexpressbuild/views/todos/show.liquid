@@ -1,0 +1,20 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div class="todo show">
+
+<h1>{{todo.action}}</h1>
+{% if todo.completed == true %}
+<h3>Completed</h3>
+{% else %}
+<h3>Not Yet Completed</h3>
+{% endif %}
+
+<form action="/todos/{{todo._id}}?_method=DELETE"  method="post" class="btn">
+<input type="submit" value="delete" class="btn">
+</form>
+<a href="/todos/{{todo._id}}/edit"><button>Edit</button></a>
+<a href="/todos"><button>Back to Main</button></a>
+</div>
+
+{% endblock %}

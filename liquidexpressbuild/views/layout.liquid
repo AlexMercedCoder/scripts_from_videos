@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Todo App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+    
+</head>
+<body>
+<header>
+<h1>Todo App</h1>
+<nav>
+
+{% if main == true %}
+<a href="/"><div>Home</div></a>
+<a href="auth/signup"><div>Signup</div></a>
+<a href="auth/login"><div>Login</div></a>
+{% else %}
+<a href="/todos"><div>Home</div></a>
+<a href="/todos/new"><div>New Todo</div></a>
+<a href="/auth/logout"><div>Logout</div></a>
+{% endif %}
+
+</nav>
+</header>
+<main>{% block content %} {% endblock%}</main>
+<footer></footer>
+</body>
+</html>

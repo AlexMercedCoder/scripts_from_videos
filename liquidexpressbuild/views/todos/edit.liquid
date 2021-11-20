@@ -1,0 +1,18 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div class="form">
+<h3>Edit Todo</h3>
+<form action="/todos/{{todo._id}}?_method=PUT" method="post">
+<input type="text" name="action" placeholder="what do you need to do?" value="{{todo.action}}">
+<input type="checkbox" name="completed" 
+{% if todo.completed == true %}
+checked
+{% endif %}
+>
+<input type="submit" value="Edit Todo">
+</form>
+</div>
+
+
+{% endblock %}

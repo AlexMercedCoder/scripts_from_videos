@@ -1,0 +1,94 @@
+header h1 {
+    text-align: center;
+    color: navy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+}
+
+.todo {
+    width:60%;
+    margin: 10px auto;
+    background-color: bisque;
+    border: 3px dashed brown;
+    padding: 30px;
+
+}
+
+.todo h2 {
+    width: 20%;
+    min-width: 200%;
+    margin: auto;
+}
+
+.todo.show h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+button, input[type="submit"].btn {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color .3s, color .3s;
+}
+
+button:hover, input[type="submit"].btn:hover {
+    background-color: white;
+    color: purple;
+}
+
+nav {
+    display: flex;
+    background-color: navy;
+    color: white;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav div {
+    transition: color .3s, background-color .3s;
+}
+
+nav div:hover {
+    color: navy;
+    background-color: white;
+}
+
+.form {
+    width: 40%;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"], input[type="submit"], input{
+    padding: 10px;
+    font-size: 2em;
+    color: white;
+    background-color: navy;
+    border: none;
+}
+
+form.btn {
+    display: inline;
+}
+
+.auth input {
+    display: block;
+    margin: 10px auto;
+}
+
+.error {
+    text-align: center;
+    background-color: crimson;
+    color: white;
+}
