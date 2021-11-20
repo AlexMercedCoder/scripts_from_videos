@@ -19,8 +19,3 @@ const Address2 = mongoose.model("Address2", addressSchema)
 
 module.exports = {Person2, Address2}
 
-[{},{},7,3,8]
-
-5- 6 = -1
-
-8 - 3 = 5
