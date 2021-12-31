@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}firstpage{% endblock %}
+
+
+{% block content %}
+<h1>Hello World</h1>
+{% for num in nums %}
+<h3>{{num}} - {{query}}</h3>
+{% endfor %}
+{% endblock %}
+
+
+{% block js %}
+<script>
+console.log("Hello World")
+</script>
+{% endblock %}
