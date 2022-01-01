@@ -1,21 +1,28 @@
 from masonite.controllers import Controller
 from masonite.views import View
 from masonite.request import Request
+from app.models.Todo import Todo
+from masonite.response import Response
 
 
 class PagesController(Controller):
 
-    def __init__(self, view: View, request: Request):
+    def __init__(self, view: View, request: Request, response: Response):
         self.view = view
         self.request = request
+        self.response = response
 
     def firstpage(self):
         return self.view.render("firstpage", {
-            "nums": [1,2,3,4,5,6]
+            "todos": Todo.all()
         })
 
-    def firstpage2(self):
-        return self.view.render("firstpage", {
-            "nums": [1,2,3,4,5,6],
-            "query": self.request.input("cheese")
-        })
+    def maketodo(self):
+        message = self.request.input("message")
+        Todo.create(message = message)
+        self.response.redirect(location="/firstpage")
+
+    def deletetodo(self):
+        id = self.request.param("id")
+        Todo.find(id).delete()
+        self.response.redirect(location="/firstpage")

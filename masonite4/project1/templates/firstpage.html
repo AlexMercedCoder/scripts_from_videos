@@ -3,15 +3,22 @@
 
 
 {% block content %}
-<h1>Hello World</h1>
-{% for num in nums %}
-<h3>{{num}} - {{query}}</h3>
+{% for todo in todos %}
+<h1>{{todo.message}}</h1> <a href="/deletetodo/{{todo.id}}"><button>Delete</button></a>
 {% endfor %}
+
+<form action="/maketodo" method="post">
+    {{csrf_field}}
+<input type="text" name="message" placeholder="What to do?">
+<input type="submit" value="Create Todo">
+</form>
 {% endblock %}
 
 
 {% block js %}
-<script>
-console.log("Hello World")
-</script>
+
+{% endblock %}
+
+{% block head %}
+<script src="/js/firstpage.js" type="text/babel" defer></script>
 {% endblock %}
