@@ -16,11 +16,12 @@ from masonite.configuration import config
 from config.filesystem import STATICFILES
 
 from app.middlewares.VerifyCsrfToken import VerifyCsrfToken
+from app.middlewares.CorsMiddleware import CorsMiddleware
 
 
 class Kernel:
 
-    http_middleware = [MaintenanceModeMiddleware, EncryptCookies]
+    http_middleware = [CorsMiddleware, MaintenanceModeMiddleware, EncryptCookies]
 
     route_middleware = {
         "web": [SessionMiddleware, LoadUserMiddleware, VerifyCsrfToken],
