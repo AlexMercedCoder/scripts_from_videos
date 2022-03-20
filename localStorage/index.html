@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text">
+        <button id="save">Save</button>
+        <button id="load">Load</button>
+    </div>
+    <script>
+        const input = document.querySelector("input")
+        const save = document.querySelector("#save")
+        const load = document.querySelector("#load")
+
+        const application_state = {
+            text: ""
+        }
+
+        function save_data(){
+            application_state.text = input.value
+            const state_as_json = JSON.stringify(application_state)
+            window.localStorage.setItem("app_state", state_as_json)
+        }
+
+        function load_data() {
+            const state_as_json = window.localStorage.getItem("app_state")
+            if (state_as_json){
+                const loaded_data = JSON.parse(state_as_json)
+                console.log(loaded_data)
+                application_state.text = state_as_json.text
+                input.value = loaded_data.text
+            }
+        }
+
+        load_data()
+
+        save.addEventListener("click", save_data)
+        load.addEventListener("click", load_data)
+
+    </script>
+    
+</body>
+</html>
