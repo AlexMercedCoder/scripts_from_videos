@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+div {
+    width: 80%;
+    border: 5px dotted brown;
+    margin: auto;
+}
+
+aside {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    margin: 20px auto;
+}
