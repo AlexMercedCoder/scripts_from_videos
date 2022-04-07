@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="first" value="hello" placeholder="write words">
+        <select name="second">
+            <option value=1>One</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <input type="number" name="third" placeholder="num?">
+        <input type="submit" value="click this">
+    </form>
+    <script>
+        const form = document.querySelector("form")
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+            console.log(event)
+            
+        })
+    </script>
+</body>
+</html>
