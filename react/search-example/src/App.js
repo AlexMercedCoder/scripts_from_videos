@@ -1,25 +1,25 @@
 import pokemon from "./pokedex";
 import {useState, useRef} from "react"
+import useSearch from "./useSearch";
 
 function App() {
 
-  const [displayedPokemon, setDisplayedPokemon] = useState(pokemon)
+  const [displayedPokemon, filterPokemon, resetPokemon] = useSearch(pokemon, (term) => {
+    return pokemon.filter((poke) => {
+      return poke.name.toLowerCase().includes(term.toLowerCase())
+    })
+  })
 
   const inputRef = useRef(null)
 
-  const searchPokemon = (searchString) => {
-    return pokemon.filter((poke) => {
-      return poke.name.toLowerCase().includes(searchString.toLowerCase())
-    })
-  }
 
   const handleSubmit = (event) => {
     const search = inputRef.current.value
     if (search === ""){
-      setDisplayedPokemon(pokemon)
+      resetPokemon()
       return 1
     }
-    setDisplayedPokemon(searchPokemon(search))
+    filterPokemon(search)
   }
 
   return (
