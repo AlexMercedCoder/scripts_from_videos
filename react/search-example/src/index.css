@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+.pokemon-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 10px;
+}
