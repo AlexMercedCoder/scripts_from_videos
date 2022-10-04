@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of Page</title>
+    <!-- ***Connecting External Javascript File to run after DOM Loads*** -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+    
+    <h1>Hello This is a Title</h1>
+    <div class="thediv">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ducimus exercitationem nihil repellat, consectetur sit neque ex culpa delectus laboriosam recusandae pariatur expedita facilis voluptatum rem nostrum quas corporis hic.</div>
+
+    <!-- *** BLOCK OF JAVASCRIPT INSIDE AN HTML FILE *** -->
+    <script>
+        // saving the div and the h1 in a variable
+        const h1 = document.querySelector("h1")
+        const div = document.querySelector("thediv")
+
+        // changing the h1 to a red font
+        h1.style.color = "red"
+
+        // changing the text in the div
+        div.innerText = "This is the new text"
+
+        // adding a new h2 inside the div
+        const theNewH2 = document.createElement("h2")
+        theNewH2.innerText = "The text in the h2"
+        div.append(theNewH2)
+    </script>
+    
+</body>
+</html>
