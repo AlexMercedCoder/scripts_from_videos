@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <div id="form">
+        <form>
+            <input type="text" placeholder="type todo here">
+            <input type="submit" value="create todo">
+        </form>
+    </div>
+    <div id="todos"></div>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: 2px green underline;
+        }
+
+        input {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            background-color:burlywood
+        }
+
+        div#form {
+            text-align: center;
+        }
+
+        .todo {
+            text-align: center;
+            margin: 10px auto;
+            width: 50%;
+            background-color:tomato;
+            padding: 8px;
+
+        }
+
+    </style>
+    <script>
+        // storing frquently used dom elements in variables
+        const input = document.querySelector("input[type='text']")
+        const form = document.querySelector("form")
+        const todoDiv = document.querySelector("#todos")
+
+        // function to load todos
+        function loadTodos(){
+            const todoJSON = localStorage.getItem("todos")
+
+            if (todoJSON){
+                return JSON.parse(todoJSON)
+            }
+
+            return []
+        }
+
+        // array for storing todos
+        const todos = loadTodos()
+
+        // function to save todos to localStorage
+        function saveTodos(){
+            const todoJSON = JSON.stringify(todos)
+            localStorage.setItem("todos", todoJSON)
+        }
+
+        
+
+        // a function that populates todos
+        function populateTodos(){
+            // clear out the todo div
+            todoDiv.innerHTML = ""
+
+            // loop and populate todos
+            for (const todo of todos){
+                const p = document.createElement("p")
+                p.classList.add("todo")
+                p.innerText = todo
+                todoDiv.append(p)
+
+                //setup ability to erase todo
+                const index = todos.indexOf(todo)
+                p.addEventListener("click", (event) => {
+                    // remove item from array
+                    todos.splice(index, 1)
+                    // repopulate
+                    populateTodos()
+                })
+
+            }
+
+            saveTodos()
+        }
+
+        function addTodos(newTodo){
+            // push the new todo into array
+            todos.push(newTodo)
+            //update the screen
+            populateTodos()
+        }
+
+        function handleSubmit(event){
+            event.preventDefault()
+            const text = input.value
+            addTodos(text)
+        }
+
+        form.addEventListener("submit", handleSubmit)
+
+        populateTodos()
+
+    </script>
+</body>
+</html>
