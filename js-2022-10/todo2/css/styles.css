@@ -1,0 +1,29 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color:saddlebrown;
+    text-decoration: purple underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#add-category, #add-todo, main {
+    width: 60%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 3px solid brown;
+    text-align: center;
+}
+
+.category {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px dotted green;
+}
+
+.todo {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px dashed red;
+}
