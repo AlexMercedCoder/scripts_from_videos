@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Cheese</button>
+    <button>Good</button>
+    <button>Bad</button>
+    <a href="">Hello</a>
+    <form>
+        <input type="text">
+        <input type="submit">
+    </form>
+    <script>
+        const button = document.querySelector("button")
+
+        console.log(button)
+        console.dir(button)
+
+        button.addEventListener("dblclick", function(event){
+            console.log(event)
+            console.log(event.target)
+            if(event.altKey){
+                alert("You are holding the alt key")
+            }
+        })
+
+        const a = document.querySelector("a")
+        a.addEventListener("click", (e) => {
+            e.preventDefault()
+            console.log("Hello")
+        })
+
+        const form = document.querySelector("form")
+        form.addEventListener("submit", function(event){
+            event.preventDefault()
+            console.dir(this[0])
+            console.log("hello")
+        })
+
+        const input = document.querySelector("[type='text']")
+
+        input.addEventListener("change", () => console.log("change"))
+        input.addEventListener("input", () => console.log("input"))
+        input.addEventListener("focus", () => console.log("focus"))
+
+        //window.addEventListener("click", function(e){
+            //e.stopPropagation()
+            //e.preventDefault()
+            //console.log(e.currentTarget)
+            //console.log(e.target)
+            //alert(e.target.innerText)
+        //})
+    </script>
+    
+</body>
+</html>
