@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            Title
+        </nav>
+    </header>
+    <main>
+        <article>
+            Content
+        </article>
+        <aside>
+            Sidebar
+        </aside>
+    </main>
+    <footer>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+        <div class="box">dfd</div>
+    </footer>
+
+
+    <style>
+        * {
+            outline: 3px solid gold;
+        }
+
+        header, main, footer {
+            display: flex;
+            margin: 10px auto;
+            width: 80%;
+            justify-content: space-between;  
+            flex-wrap: wrap;          
+        }
+
+        nav {
+            font-size: 2em;
+            text-align: center;
+            width: 100%;
+            background-color: burlywood;
+        }
+
+        article {
+            width: 70%;
+            height: 500px;
+            background-color: red;
+        }
+
+        aside {
+            width: 28%;
+            height: 500px;
+            background-color: green;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        @media screen and (max-width: 400px) {
+            aside {
+                display: none;
+            }
+
+            article {
+                width: 100%
+            }
+        }
+
+    </style>
+    
+</body>
+</html>

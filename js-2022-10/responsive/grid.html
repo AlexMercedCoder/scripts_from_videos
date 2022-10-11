@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="grid-container">
+
+    <nav>
+        Title
+    </nav>
+
+
+    <article>
+        Content
+    </article>
+    <aside>
+        Sidebar
+    </aside>
+
+</div>
+
+
+
+    <style>
+
+        .grid-container {
+            display: grid;
+            height: 500px;
+            grid-template-areas:
+            "title title title"
+            "content content sidebar"
+            "content content sidebar"
+            "content content sidebar"
+            "content content sidebar"
+            "content content sidebar"
+            "content content sidebar";
+        }
+
+        nav {
+            grid-area: title;
+            background-color: red;
+        }
+
+        article {
+            grid-area: content;
+            background-color: blue;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: green;
+        }
+
+        @media screen and (max-width: 400px){
+            .grid-container {
+                grid-template-areas: 
+                "title"
+                "content"
+                "content"
+                "content"
+                "content"
+                "content"
+                "content";
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+    </style>
+    
+</body>
+</html>
