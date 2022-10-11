@@ -1,7 +1,7 @@
 const arrayOfObjects = [
     {Name: "Alex Merced", Age: 37, Email: "alex@alexmercedcoder.dev"},
     {Name: "Bob", Age: 34, Email: "Bob@Bob"},
-    {Name: "Josie", Age: 17, Email: "Josie@Josie"},
+    {Name: "Josie", Age: 17, Email: "Josie@Josie", GraduatedHighSchool: true},
 ]
 
 console.log(arrayOfObjects)
@@ -27,7 +27,34 @@ fixedArray.forEach((arrayItem, index) => {
 // array.filter - given a function, if the function returns a truthy value, then the item is included in the new array that is returned
 
 const filteredArray = fixedArray.filter((arrayItem) => {
-    return true
+    return arrayItem.age >= 18
 })
 
 console.log(filteredArray)
+
+// some and every
+
+if (arrayOfObjects.some((arrayItem) => {
+    return arrayItem.GraduatedHighSchool
+})){
+    console.log("Some objects have property")
+}
+
+// Find and FindIndex
+const item = fixedArray.find((item) => {return item.age < 18})
+const index = fixedArray.findIndex((item) => {return item.age < 18})
+
+console.log(index, item)
+
+// reduce
+const sumOfAges = fixedArray.reduce((acc, item) => {return acc + item.age}, 0)
+const allNames = fixedArray.reduce((acc, item) => {
+    return acc + item.name + " "
+}, "")
+console.log(sumOfAges)
+console.log(allNames)
+
+// sort
+console.log(fixedArray.sort((a,b) => {
+    return a.age - b.age
+}))
