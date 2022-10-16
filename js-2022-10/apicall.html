@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of Pokemon</h1>
+    <main>
+
+    </main>
+    <script>
+        const url = "https://dummydata.netlify.app/pokedex.json"
+
+        const request = fetch(url)
+
+        // we need to parse the readable stream
+        request
+        .then((response) => {
+            return response.json()
+        })
+        // I have access to the data
+        .then((data) => {
+            console.log(data)
+            const simpleVersion = data.pokemon.map((poke) => {
+                return {
+                    name: poke.name,
+                    img: poke.img
+                }
+            })
+            console.log(simpleVersion)
+            const filteredVersion = simpleVersion.filter((poke) => poke.name.split("")[0] === "C")
+            console.log(filteredVersion)
+
+            filteredVersion.forEach(
+                (poke) => {
+                    const main = document.querySelector("main")
+
+                    const div = document.createElement("div")
+
+                    div.innerHTML = `
+                    <h2>${poke.name}</h2>
+                    <img src="${poke.img}" alt="${poke.name}">
+                    `
+
+                    main.append(div)
+                }
+            )
+        })
+    </script>
+    
+</body>
+</html>
