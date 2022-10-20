@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function getJSON(url){
+            return fetch(url).then((r) => r.json())
+        }
+
+        getJSON("http://api.openweathermap.org/geo/1.0/direct?q=New York,NY,US&limit=1&appid=68bebc335f54ee11eada0b0ee94ef257")
+        .then((location) => {
+            console.log(location[0].lat)
+            const lat = location[0].lat
+            const long = location[0].lon
+            const key = "68bebc335f54ee11eada0b0ee94ef257"
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`
+
+            getJSON(url)
+            .then(weather => {
+                console.log(weather)
+            })
+        })
+
+    </script>
+</body>
+</html>
