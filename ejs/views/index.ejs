@@ -1,0 +1,24 @@
+<%- include("./head.ejs") %>
+
+<% for(let i = 0; i < 10; i++) { %>
+
+    <h1><%= i %></h1>
+
+<% }%>
+
+<% nums.forEach((num, index) => { %>
+
+    <% if (num % 2 === 0){ %>
+
+        <h2> <%= double(num) %> is in index <%= index %></h2>
+
+    <% } %>
+
+    
+
+<% }) %>
+
+<script>
+    console.log("Hello")
+    $("body").append($("<h1>").text("hello world"))
+</script>
