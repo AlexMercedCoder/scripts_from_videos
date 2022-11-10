@@ -1,16 +1,20 @@
 <%- include("./head.ejs") %>
 
+<%- helpers.renderNav("This Works") %>
+
 <% for(let i = 0; i < 10; i++) { %>
 
     <h1><%= i %></h1>
 
 <% }%>
 
+<%- helpers.renderLoop(nums) %>
+
 <% nums.forEach((num, index) => { %>
 
     <% if (num % 2 === 0){ %>
 
-        <h2> <%= double(num) %> is in index <%= index %></h2>
+        <h2> <%= helpers.milesToKm(double(num)) %> is in index <%= index %></h2>
 
     <% } %>
 
