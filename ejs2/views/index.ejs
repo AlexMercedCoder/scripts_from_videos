@@ -1,0 +1,32 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+</head>
+
+<h1> Hello WOrld </h1>
+<button id="a">Hello</button>
+
+<% const cheese = "gouda" %>
+<h1><%= cheese %></h1>
+
+<div x-data="{ open: false }">
+    <button @click="open = !open">Expand</button>
+ 
+    <span x-show="open">
+      Content...
+    </span>
+</div>
+
+<button hx-post="/clicked" hx-swap="outerHTML">
+    Click Me
+  </button>
+
+<script>
+console.log("Hello")
+
+$("button#a").on("click", () => alert("Hello"))
+
+</script>
