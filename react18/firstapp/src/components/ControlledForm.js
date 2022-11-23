@@ -12,18 +12,15 @@ export default function ControlledForm(props) {
 
   const [form, setForm] = useState({
       todo: "",
-      cheese: ""
+      other: {
+          cheese: ""
+      }
   })
 
   function handleSubmit(event){
       event.preventDefault()
       const newState = [...todos]
-      newState.push({
-          todo: form.todo,
-          other: {
-              cheese: form.cheese
-          }
-      })
+      newState.push(form)
       setTodos(newState)
   }
 
@@ -33,11 +30,17 @@ export default function ControlledForm(props) {
       setForm(newState)
   }
 
+  function handleChange2(event){
+    const newState = {...form}
+    newState.other[event.target.name] = event.target.value
+    setForm(newState)
+}
+
   return (
     <div>
         <form onSubmit={handleSubmit}>
             <input type="text" name="todo" value={form.todo} onChange={handleChange}/>
-            <input type="text" name="cheese" value={form.cheese} onChange={handleChange}/>
+            <input type="text" name="cheese" value={form.cheese} onChange={handleChange2}/>
             <input type="submit"/>
         </form>
       {todos.map((todo, index) => (
