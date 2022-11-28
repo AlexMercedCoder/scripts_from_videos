@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs") %>
+<body>
+
+    <%- include("partials/nav.ejs") %>
+
+    <% for (let num of nums) { %>
+        <h1><%= num %></h1>
+        <% } %>
+        
+        <% for (let [key, value] of queries) { %>
+        <h1><%= key %> header is valued at <%= value %></h1>
+        <% } %>
+        
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div><img id="carousel" src="https://cdn.hswstatic.com/gif/different-cheeses.jpg"></div>
+
+    <style>
+        img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 50px;
+            border: 5px solid brown;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        const images = [
+        "https://cdn.hswstatic.com/gif/different-cheeses.jpg",
+        "https://www.flamingotravels.co.in/blog/wp-content/uploads/2020/04/Cheese-feature.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6uafAdGhJx85_mZAveeu-QVoX7zN3PhwNXkmtZ3oTbVZNbSBsoWCuzId3Z0LgDqzQOE8&usqp=CAU"
+        ]
+
+        let index = 0
+
+        function swapPhoto(){
+            const img = document.querySelector("img")
+            index += 1
+
+            if (index >= images.length){
+                index = 0
+            }
+            
+            img.setAttribute("src", images[index])
+        }
+
+        document.querySelector("img").addEventListener("click", swapPhoto)
+    </script>
+    
+</body>
+</html>
