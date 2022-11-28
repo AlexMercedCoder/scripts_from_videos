@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@solidjs/meta': ^0.28.0
   '@solidjs/router': ^0.5.0
+  graphql: ^16.6.0
   solid-js: ^1.6.0
   solid-start: ^0.2.0
   solid-start-node: ^0.2.0
@@ -12,6 +13,7 @@ specifiers:
 dependencies:
   '@solidjs/meta': 0.28.2_solid-js@1.6.2
   '@solidjs/router': 0.5.1_solid-js@1.6.2
+  graphql: 16.6.0
   solid-js: 1.6.2
   solid-start: 0.2.5_i2cnpwj3ojjdnkycik5yjsstli
   undici: 5.13.0
@@ -2143,6 +2145,11 @@ packages:
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
+
+  /graphql/16.6.0:
+    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
+    dev: false
 
   /has-flag/3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}

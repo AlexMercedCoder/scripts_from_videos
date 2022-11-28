@@ -1,10 +1,11 @@
-import {useParams, json} from "solid-start"
+import {useParams, useSearchParams, json} from "solid-start"
 
 export default function CheeseParam(props){
 
     const params = useParams()
+    const [searchParams, setSearchParams] = useSearchParams()
 
-    console.log(params)
+    console.log(params, searchParams.hello)
 
     return <h1>The {params.param} Page</h1>
 }
