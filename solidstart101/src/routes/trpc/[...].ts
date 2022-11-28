@@ -7,7 +7,7 @@ const handler = (event: APIEvent) =>
     endpoint: '/trpc',
     req: event.request,
     router: appRouter,
-    createContext: () => ({}),
+    createContext: () => ({cheese: "gouda"}),
   });
 
 export const GET = handler;

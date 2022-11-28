@@ -5,6 +5,8 @@ export default function Breads(props) {
 
   client.hello.query().then(r => console.log(r))
 
+  client.goodbye.query().then(r => console.log(r))
+
   return (
     <div>
       <h1>Above</h1>

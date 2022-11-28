@@ -3,20 +3,26 @@ lockfileVersion: 5.4
 specifiers:
   '@solidjs/meta': ^0.28.0
   '@solidjs/router': ^0.5.0
+  '@trpc/client': ^10.4.1
+  '@trpc/server': ^10.4.1
   graphql: ^16.6.0
   solid-js: ^1.6.0
   solid-start: ^0.2.0
   solid-start-node: ^0.2.0
   undici: ^5.11.0
   vite: ^3.1.8
+  zod: ^3.19.1
 
 dependencies:
   '@solidjs/meta': 0.28.2_solid-js@1.6.2
   '@solidjs/router': 0.5.1_solid-js@1.6.2
+  '@trpc/client': 10.4.1_@trpc+server@10.4.1
+  '@trpc/server': 10.4.1
   graphql: 16.6.0
   solid-js: 1.6.2
   solid-start: 0.2.5_i2cnpwj3ojjdnkycik5yjsstli
   undici: 5.13.0
+  zod: 3.19.1
 
 devDependencies:
   solid-start-node: 0.2.5_qabr3fxsam3mjpsvjg5c7ynjou
@@ -1291,6 +1297,18 @@ packages:
       solid-js: ^1.5.3
     dependencies:
       solid-js: 1.6.2
+
+  /@trpc/client/10.4.1_@trpc+server@10.4.1:
+    resolution: {integrity: sha512-t6GJaFf3U8xPJh4IhgsRcV+JMl/hnPA+mMzpOW+jHAEw/8hhqI8cnr/+fKvTMx5jINE8yttCRYDPOnQ+U49EAQ==}
+    peerDependencies:
+      '@trpc/server': 10.4.1
+    dependencies:
+      '@trpc/server': 10.4.1
+    dev: false
+
+  /@trpc/server/10.4.1:
+    resolution: {integrity: sha512-GsG6jYDDt3OORn/HrrPPLIZB99nFDGbp6iIUitWq29XoRtwoRQSgEasPwfq7SbGY2MJG4ea2C2ZfY5nFoiUaPA==}
+    dev: false
 
   /@types/cookie/0.5.1:
     resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}
@@ -2881,3 +2899,7 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.1.1
+
+  /zod/3.19.1:
+    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
+    dev: false
