@@ -1,3 +1,7 @@
+<%- include("./partials/head.ejs", {title: "bread page"}) %>
+
+<%- include("./partials/header.ejs") %>
+
 <ul>
     <% for (bread of breads)  {%>
 
@@ -5,3 +9,5 @@
 
     <% } %>
 </ul>
+
+<%- include("./partials/footer.ejs") %>

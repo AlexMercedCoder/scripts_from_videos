@@ -21,5 +21,10 @@ app.get("/bread", (req, res) => {
     res.render("bread.ejs", {breads: ["rye", "wheat", "corn"]})
 })
 
+app.get("/styling", (req, res) => {
+    res.render("styling.ejs", {})
+})
+
 // listener
-app.listen(process.env.PORT, console.log(`You are listening on port ${process.env.PORT}`))
+const PORT = process.env.PORT || 3000
+app.listen(PORT, console.log(`You are listening on port ${PORT}`))
