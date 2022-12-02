@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./client.js"></script>
+</head>
+<body>
+
+    <h1>Todos</h1>
+    <ul></ul>
+    <form>
+        <input type="text" name="message">
+        <input type="submit">
+    </form>
+
+    <script>
+
+        async function renderTodos(){
+            const todos = await rpcClient({type: "getTodos", payload: {}})
+
+            console.log(todos)
+
+            const ul = document.querySelector("ul")
+
+            ul.innerHTML = ""
+
+            for (let todo of todos){
+                console.log(todo)
+                const li = document.createElement("li")
+                li.innerText = todo.message
+                ul.append(li)
+            }
+        }
+
+        renderTodos()
+
+        document.querySelector("form").addEventListener("submit", async (event) => {
+            event.preventDefault()
+            const input = document.querySelector("[name='message']")
+            const message = input.value
+            await rpcClient({type: "createTodo", payload: {message}})
+            renderTodos()
+        })
+
+    </script>
+    
+</body>
+</html>
