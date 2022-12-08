@@ -1,0 +1,21 @@
+<h1><%= obj.message %></h1>
+
+<script>
+
+    const obj = "<%= JSON.stringify(obj) %>"
+
+    console.log(obj)
+
+    const objReplaced = obj.replaceAll("&#34;",'"')
+
+    const objAsJs = JSON.parse(objReplaced)
+
+    console.log(objAsJs)
+
+    fetch("http://localhost:3000/senddata2")
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data)
+    })
+
+</script>
