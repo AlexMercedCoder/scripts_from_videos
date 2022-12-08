@@ -1,0 +1,29 @@
+<div>
+
+</div>
+<% pokemon.forEach((poke, index) => { %>
+<h1 onclick="renderPokemon(<%= index %>)"><%= poke.name %></h1>
+
+<% }) %>
+
+<script>
+    const rawPokemon = "<%= JSON.stringify(pokemon) %>"
+
+    const jsonPokemon = rawPokemon.replaceAll("&#34;",'"')
+
+    const pokemon = JSON.parse(jsonPokemon)
+    
+    console.log(pokemon)
+
+    function renderPokemon(index){
+        const div = document.querySelector("div")
+        div.innerHTML = ""
+        const p = pokemon[index]
+        div.innerHTML = `
+        <h1>${p.id} - ${p.name}</h1>
+        <img src="${p.img}" alt="${p.name}">
+        `
+    }
+
+
+</script>

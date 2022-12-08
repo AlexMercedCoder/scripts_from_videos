@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const pokemon = require("./models/pokedex.json").pokemon
 
 
 // set the default template extension
@@ -26,6 +27,18 @@ app.get("/senddata2", (req, res) => {
 
   res.json(obj)
 
+})
+
+app.get("/displaypokemonejs", (req, res) => {
+  res.render("poke1.ejs", {pokemon})
+})
+
+app.get("/displaypokemonhttp", (req, res) => {
+  res.render("poke2.ejs", {pokemon})
+})
+
+app.get("/getpokemon/:index", (req, res) => {
+  res.json(pokemon[req.params.index])
 })
 
 
