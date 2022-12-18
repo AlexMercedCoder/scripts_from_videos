@@ -1,0 +1,30 @@
+* {
+  /* outline: 3px solid gold; */
+  box-sizing: border-box;
+}
+
+.nav {
+  border: 3px solid red;
+  padding: 5px;
+}
+
+.main main {
+ width: 60%;
+ border: 3px solid blue;
+ height: 500px;
+}
+
+.main aside {
+  width: 30%;
+  border: 3px solid pink;
+}
+
+.footer {
+  border: 3px solid green;
+  height: 200px;
+}
+
+.footer div {
+  border: 2px solid purple;
+  width: 25%;
+}
