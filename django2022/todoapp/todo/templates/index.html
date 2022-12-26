@@ -1,0 +1,13 @@
+<h1>My Todos</h1>
+<ul>
+    {% for todo in todos %}
+        <li>{{todo.title}}</li>
+        <form action="/todo/delete/{{todo.id}}/" method="post">
+            <button>Delete</button>
+        </form>
+    {% endfor %}
+    <form action="/todo/" method="post">
+        {{form}}
+        <button>Submit</button>
+    </form>
+</ul>
