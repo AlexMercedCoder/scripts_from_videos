@@ -1,0 +1,29 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Template for a CoquitoJS Application",
+  "main": "cors.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMercedCoder/CoquitoJS-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexMercedCoder/CoquitoJS-Template/issues"
+  },
+  "homepage": "https://github.com/AlexMercedCoder/CoquitoJS-Template#readme",
+  "dependencies": {
+    "coquito": "^0.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "morgan": "^1.10.0"
+  }
+}
