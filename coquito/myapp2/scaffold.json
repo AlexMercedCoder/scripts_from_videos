@@ -1,0 +1,18 @@
+{
+    "graphql": true,
+    "rpc": true,
+    "routers": ["/dog", "/cat"],
+    "bodyparsers": true,
+    "views": "nunjucks",
+    "port": 4444,
+    "host": "0.0.0.0",
+    "static": "public",
+    "package": {
+      "name": "my-app",
+      "description": "this is my-app",
+      "author": "Alex Merced",
+      "email": "alexmerced@alexmerced.dev",
+      "repo": "http://github.com/..."
+    },
+    "db": "sql-sqlite3"
+  }
