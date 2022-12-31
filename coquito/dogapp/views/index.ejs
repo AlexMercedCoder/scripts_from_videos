@@ -1,0 +1,16 @@
+<h1>The Dog App</h1>
+
+<div>
+    <% for (let dog of dogs) { %>
+        <section>
+            <h1><%= dog.name %></h1>
+            <h2><%= dog.age %></h2>
+        </section>
+    <%}%>
+
+    <form action="/dog" method="post">
+        <input type="text" name="name">
+        <input type="number" name="age">
+        <button>Create Dog</button>
+    </form>
+</div>

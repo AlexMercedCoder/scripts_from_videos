@@ -1,0 +1,18 @@
+{
+    "graphql": false,
+    "rpc": false,
+    "routers": ["/dog"],
+    "bodyparsers": true,
+    "views": "ejs",
+    "port": 4444,
+    "host": "0.0.0.0",
+    "static": "public",
+    "package": {
+      "name": "dog-app",
+      "description": "this is my-app",
+      "author": "Alex Merced",
+      "email": "alexmerced@alexmerced.dev",
+      "repo": "http://github.com/..."
+    },
+    "db": "sql-sqlite3"
+  }
