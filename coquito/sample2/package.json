@@ -1,0 +1,40 @@
+{
+        "name": "my-app",
+        "version": "1.0.0",
+        "description": "this is my-app",
+        "main": "server.js",
+        "type": "module",
+        "license": "AGPL-version-3.0",
+        "private": false,
+        "engines": {
+                "node": ">= 18.0.0",
+                "npm": ">= 8.0.0"
+        },
+        "homepage": "",
+        "repository": {
+                "type": "git",
+                "url": "http://github.com/..."
+        },
+        "bugs": "",
+        "keywords": [],
+        "author": {
+                "name": "Alex Merced",
+                "email": "alexmerced@alexmerced.dev",
+                "url": ""
+        },
+        "contributors": [],
+        "scripts": {
+                "start": "node server.js",
+                "dev": "node --watch server.js"
+        },
+        "dependencies": {
+                "coquito": "^0.0.19",
+                "cors": "^2.8.5",
+                "dotenv": "^16.0.3",
+                "ejs": "^3.1.8",
+                "method-override": "^3.0.0",
+                "morgan": "^1.10.0",
+                "sequelize": "^6.28.0",
+                "sqlite3": "^5.1.4"
+        }
+}

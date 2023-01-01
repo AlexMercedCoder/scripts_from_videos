@@ -1,0 +1,25 @@
+<head>
+    <script src="/clients.js" defer></script>
+</head>
+
+<h1>The Server is Working</h1>
+
+<button id="graphql">Trigger GraphQL</button>
+
+<button id="rpc">Trigger RPC</button>
+
+<script defer>
+    console.log("hello")
+
+    document.querySelector("#graphql").addEventListener("click", async () => {
+        const result = await gqlClient("query{sayHello}")
+        console.log(result)
+    })
+
+    document.querySelector("#rpc").addEventListener("click", async () => {
+        console.log("cheese")
+        const response = await rpcDispatch({type: "sayHello", payload: {cheese: "gouda"}})
+        alert(response.result)
+    })
+
+</script>

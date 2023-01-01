@@ -1,0 +1,8 @@
+{
+        "bodyparsers": true,
+        "routers": ["/dog","/cat"],
+        "port": 4444,
+        "static": "public",
+        "host": "0.0.0.0"
+    }
+    

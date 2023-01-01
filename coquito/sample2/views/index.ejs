@@ -1,0 +1,15 @@
+<head>
+    <script src="/clients.js" defer></script>
+</head>
+
+<h1>The Server is Working</h1>
+
+<button>Click Me</button>
+
+<script>
+    document.querySelector("button").addEventListener("click", async () => {
+        const result = await rpcDispatch({type: "sayHello", payload: {cheese: "gouda"}})
+        console.log(result)
+        alert(result.result)
+    })
+</script>
