@@ -1,0 +1,14 @@
+{
+  "dog": {
+    "__stats": { "inserted": 5, "total": 5 },
+    "default": [{ "name": "Scruffy", "age": 5, "_id": 1 }],
+    "S": [
+      { "name": "Scruffy", "age": 5, "_id": 2 },
+      { "name": "Stevey", "age": 5, "_id": 3 }
+    ],
+    "V": [
+      { "name": "Vtevey", "age": 5, "_id": 4 },
+      { "name": "Varo", "age": 5, "_id": 5 }
+    ]
+  }
+}

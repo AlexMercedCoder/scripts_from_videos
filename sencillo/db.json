@@ -1,0 +1,13 @@
+{
+  "dog": {
+    "__stats": { "inserted": 4, "total": 4 },
+    "S": [
+      { "name": "Scruffy", "age": 5, "_id": 1 },
+      { "name": "Stevey", "age": 5, "_id": 2 }
+    ],
+    "V": [
+      { "name": "Vtevey", "age": 5, "_id": 3 },
+      { "name": "Varo", "age": 5, "_id": 4 }
+    ]
+  }
+}
