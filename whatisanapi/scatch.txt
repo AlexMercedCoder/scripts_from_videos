@@ -1,0 +1,53 @@
+// API = Application Programming Interface
+// 1. Web Service (Web Servers Sending/Receiving Information)
+// 2. Library Syntax and Standards
+
+
+// HTTP
+
+// SOAP - XML
+
+<soap:Envelope>
+<soap:Header>
+
+</soap:Header>
+ <soap:Body>
+    <Username>
+        alexmerced
+    </Username>
+    <Age>
+        37
+    </Age>
+ </soap:Body>
+</soap:Envelope>
+
+// JSON
+
+{
+ "username": "Alex Merced",
+ "age": 37
+}
+
+// REST = Representation State Transfer
+Index = /weather GET (All The Weather)
+Show = /weather/:id GET(get me the weather with matching id)
+CREATE = /weather POST (make a new weather)
+UPDATE = /weather/:id PUT/PATCH (update the weather with the matching id)
+DESTROY = /weather/:id DELETE (remove the weather with the matching)
+
+// GRAPHQL (Graph Query Language)
+POST /GRAPHQL
+
+```
+query {
+    getAllWeather(){
+        precipitation
+        temperature
+    }
+}
+```
+
+// RPC (Remote Procedure Call)
+getAllWeather()
+- gRPC (PROTOBUF)
+- tRPC (typescript)
